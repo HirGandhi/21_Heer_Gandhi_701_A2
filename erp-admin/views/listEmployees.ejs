@@ -1,0 +1,15 @@
+<h2>Employee List</h2>
+<table border="1">
+  <tr>
+    <th>EmpID</th><th>Name</th><th>Email</th><th>Salary</th>
+  </tr>
+  <% employees.forEach(e => { %>
+  <tr>
+    <td><%= e.empId %></td>
+    <td><%= e.name %></td>
+    <td><%= e.email %></td>
+    <td><%= e.salary %></td>
+  </tr>
+  <% }) %>
+</table>
+<a href="/admin/dashboard">Back</a>

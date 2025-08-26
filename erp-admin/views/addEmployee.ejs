@@ -1,0 +1,20 @@
+<h1>Add Employee</h1>
+<form method="POST" action="/admin/add-employee">
+    Name: <input type="text" name="name" required /><br>
+    Email: <input type="email" name="email" required /><br>
+    Salary: <input type="number" name="salary" required /><br>
+    <button type="submit">Add Employee</button>
+</form>
+
+<% if(empInfo){ %>
+    <p style="color:green;">
+        Employee Added! <br>
+        Name: <%= empInfo.name %> <br>
+        EmpID: <%= empInfo.empId %> <br>
+        Password: <%= empInfo.password %>
+    </p>
+<% } %>
+
+<% if(error){ %>
+    <p style="color:red;"><%= error %></p>
+<% } %>
