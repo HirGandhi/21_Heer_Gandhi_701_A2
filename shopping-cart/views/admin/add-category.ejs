@@ -1,0 +1,12 @@
+<%- include('../partials/header', {cart: []}) %>
+<h1>Add Category</h1>
+<form action="/admin/add-category" method="POST">
+    <input type="text" name="name" placeholder="Category Name" required>
+    <select name="parent">
+        <option value="">No Parent</option>
+        <% categories.forEach(cat => { %>
+            <option value="<%= cat.id %>"><%= cat.name %></option>
+        <% }) %>
+    </select>
+    <button type="submit">Add Category</button>
+</form>

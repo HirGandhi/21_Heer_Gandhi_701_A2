@@ -1,0 +1,13 @@
+<%- include('../partials/header', {cart: cart}) %>
+<h1>Products</h1>
+<ul>
+<% products.forEach(prod => { %>
+    <li>
+        <%= prod.name %> - $<%= prod.price %> 
+        <form action="/add-to-cart" method="POST" style="display:inline">
+            <input type="hidden" name="productId" value="<%= prod.id %>">
+            <button type="submit">Add to Cart</button>
+        </form>
+    </li>
+<% }) %>
+</ul>

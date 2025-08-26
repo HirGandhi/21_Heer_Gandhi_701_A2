@@ -1,0 +1,12 @@
+<%- include('../partials/header', {cart: cart}) %>
+<h1>Your Cart</h1>
+<% if(cart.length == 0) { %>
+    <p>Cart is empty.</p>
+<% } else { %>
+    <ul>
+    <% cart.forEach(item => { %>
+        <li><%= item.name %> - $<%= item.price %></li>
+    <% }) %>
+    </ul>
+    <p>Total: $<%= cart.reduce((sum, item) => sum + item.price, 0) %></p>
+<% } %>

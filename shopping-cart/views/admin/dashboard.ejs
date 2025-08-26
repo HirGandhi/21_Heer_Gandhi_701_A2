@@ -1,0 +1,18 @@
+<%- include('../partials/header', {cart: []}) %>
+<h1>Admin Dashboard</h1>
+<a href="/admin/add-category">Add Category</a> |
+<a href="/admin/add-product">Add Product</a>
+
+<h2>Categories</h2>
+<ul>
+<% categories.forEach(cat => { %>
+    <li><%= cat.name %> (Parent: <%= cat.parent || 'None' %>)</li>
+<% }) %>
+</ul>
+
+<h2>Products</h2>
+<ul>
+<% products.forEach(prod => { %>
+    <li><%= prod.name %> - $<%= prod.price %> (Category: <%= categories.find(c => c.id==prod.category)?.name %>)</li>
+<% }) %>
+</ul>

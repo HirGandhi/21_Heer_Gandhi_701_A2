@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1755957291347,
+    "name": "furniture",
+    "parent": null
+  },
+  {
+    "id": 1755957337963,
+    "name": "cosmatic",
+    "parent": null
+  },
+  {
+    "id": 1755957353580,
+    "name": "cars",
+    "parent": null
+  },
+  {
+    "id": 1755957365322,
+    "name": "vehicals",
+    "parent": null
+  },
+  {
+    "id": 1756209922591,
+    "name": "bikes",
+    "parent": null
+  }
+]
