@@ -1,0 +1,14 @@
+<!-- <h1>Apply Leave</h1>
+<form method="POST" action="/employee/leave">
+    <label>Date:</label>
+    <input type="date" name="date" required /><br>
+    <label>Reason:</label>
+    <input type="text" name="reason" required /><br>
+    <button type="submit">Apply</button>
+</form> -->
+<form method="POST" action="/employee/leave">
+    <input type="hidden" name="token" value="<%= token %>">
+    Date: <input type="date" name="date" required><br>
+    Reason: <input type="text" name="reason" required><br>
+    <button type="submit">Apply Leave</button>
+</form>

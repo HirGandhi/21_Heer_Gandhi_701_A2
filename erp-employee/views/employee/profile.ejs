@@ -1,0 +1,17 @@
+<h1>Employee Profile</h1>
+<p>EmpID: <%= emp.empId %></p>
+<p>Name: <%= emp.name %></p>
+<p>Email: <%= emp.email %></p>
+<p>Salary: <%= emp.salary %></p>
+
+<!-- <a href="/employee/leaves">View Leaves</a><br>
+<a href="/employee/apply-leave">Apply Leave</a><br>
+<a href="/employee/logout">Logout</a> -->
+
+<a href="/employee/leaves?token=<%= token %>">View Leaves</a><br>
+<a href="/employee/apply-leave?token=<%= token %>">Apply Leave</a><br>
+<a href="/employee/logout?token=<%= token %>">Logout</a>
+    
+<!-- 
+EmpID: EMP1755951484974
+Password: y92yvan2 -->

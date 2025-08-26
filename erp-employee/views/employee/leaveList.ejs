@@ -1,0 +1,12 @@
+<h1>My Leaves</h1>
+<table border="1">
+<tr><th>Date</th><th>Reason</th><th>Status</th></tr>
+<% leaves.forEach(l => { %>
+<tr>
+<td><%= l.date.toDateString() %></td>
+<td><%= l.reason %></td>
+<td><%= l.grant %></td>
+</tr>
+<% }) %>
+</table>
+<a href="/employee/profile">Back to Profile</a>
