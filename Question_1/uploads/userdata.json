@@ -1,0 +1,13 @@
+{
+  "username": "aaa",
+  "email": "abc12@gmail.com",
+  "gender": "Male",
+  "hobbies": [
+    "Reading",
+    "Sports"
+  ],
+  "profilePic": "1755696686490.jpeg",
+  "otherPics": [
+    "1755696686497.jpg"
+  ]
+}
